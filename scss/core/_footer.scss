@@ -1,0 +1,39 @@
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: var(--black-cl);
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    @include dflexObj(flex, center, space-between);
+  }
+  &__copyright {
+    color: var(--white-cl);
+    font-size: var(--fs-body-small);
+    letter-spacing: var(--ls-body-small);
+    line-height: var(--lh-body-small);
+    opacity: 0.5;
+  }
+  a {
+    @include midPositonX;
+    img {
+      max-width: 166px;
+    }
+  }
+  @include xs {
+    height: 92px;
+    .container {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    a {
+      position: initial;
+      transform: initial;
+      margin-bottom: 12px;
+      width: 135px;
+    }
+  }
+}

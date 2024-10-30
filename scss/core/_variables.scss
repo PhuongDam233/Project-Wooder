@@ -1,0 +1,109 @@
+:root {
+  /* MaxWidth Of Page, Container-Fluid, Container, Gutter*/
+
+  --max-width-page: 2560px;
+  --max-width-container-fluid: 1920px;
+  --max-width-container: calc(1196px + calc(var(--pd-left-right) * 2));
+
+  --gap: 28px;
+  //   color variable
+  --light-brown-cl: #bea67c;
+  --white-cl: #ffffff;
+  --black-cl: #000000;
+  --black-light-cl: #222222;
+  --grey-cl: #464646;
+  --blue-light-cl: #4285f4;
+  --blue-cl: #3c5a99;
+  --red-cl: #f14336;
+
+  // Fontsize - Line heght variable
+  --fs-h1: 8.4rem;
+  --lh-h1: 10.2rem;
+  --ls-h1: 10.08px;
+
+  --fs-h2: 4.6rem;
+  --lh-h2: 5.6rem;
+  --ls-h2: 4.6px;
+
+  --fs-h3: 1.8rem;
+  --lh-h3: 2.4rem;
+  --ls-h3: 0.72px;
+
+  --fs-text-button: 1.5rem;
+  --lh-text-button: 1rem;
+  --ls-text-button: 1.5px;
+
+  --fs-body: 1.8rem;
+  --lh-body: 2.5rem;
+  --ls-body: 0.36px;
+
+  --fs-body-small: 1.4rem;
+  --lh-body-small: 1.7rem;
+  --ls-body-small: 0.56px;
+
+  --fs-error-text: 1.4rem;
+  --lh-error-text: 1.7rem;
+  --ls-error-text: 0.56px;
+
+  // Fonts
+  --fb: pr;
+  --fb-b: pb;
+
+  // General Variable
+  --height-header: 76px;
+  --height-button: 48px;
+  --pd-section: 120px;
+  --pd-left-right: 28px;
+
+  // Timing Transition Variable
+  --duration: 0.3s;
+  --cubic-bezier: 0.32, 0.4, 0.64, 0.99;
+
+  // Responsive
+  @include md {
+    --max-width-container: 1140px;
+  }
+
+  @include sm {
+    --max-width-container: 960px;
+    --pd-section: 90px;
+  }
+  //  767 px
+  @include xs {
+    --max-width-container: 100%;
+    --gap: 10px;
+
+    --height-header: 56px;
+    --height-button: 36px;
+    --pd-section: 60px;
+    --pd-left-right: 15px;
+
+    --fs-h1: 5.6rem;
+    --ls-h1: 0.28rem;
+    --ls-h1: 4.48px;
+
+    --fs-h2: 3.8rem;
+    --lh-h2: 4.2rem;
+    --ls-h2: 1.52px;
+
+    --fs-h3: 1.6rem;
+    --lh-h3: 2.2rem;
+    --ls-h3: 0.64px;
+
+    --fs-text-button: 1.2rem;
+    --lh-text-button: 1.2rem;
+    --ls-text-button: 1.2px;
+
+    --fs-body: 1.5rem;
+    --lh-body: 2rem;
+    --ls-body: 0.6px;
+
+    --fs-body-small: 1.2rem;
+    --lh-body-small: 1.5rem;
+    --ls-body-small: 0.48px;
+  }
+
+  @include xxs {
+    --max-width-container: 100%;
+  }
+}
